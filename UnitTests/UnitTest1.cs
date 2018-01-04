@@ -49,5 +49,18 @@ namespace UnitTests
             Console.WriteLine(dec + " = " + de2 + " => " + dec.IsEqual(de2));
             Console.WriteLine(dec + " = " + de2 + " => " + dec.IsEqual(de2, 4));
         }
+
+        [TestMethod]
+        public void TestStringExtensions()
+        {
+            string s = "Testing string to Test if this unit test is working";
+            string[] search = new string[] { "test", "unit" };
+            string[] replace = new string[] { "TESTE", "UNIDADE" };
+            string s2 = s.Replace(search, replace, StringComparison.CurrentCultureIgnoreCase);
+            Console.WriteLine(s);
+            Console.WriteLine(s2);
+            Console.WriteLine(s);
+            Console.WriteLine(s.Length + " : " + s2.Length);
+        }
     }
 }

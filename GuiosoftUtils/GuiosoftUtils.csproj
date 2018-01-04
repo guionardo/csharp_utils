@@ -44,6 +44,7 @@
     <Compile Include="Antivirus.cs" />
     <Compile Include="Extensions\ExtDateTime.cs" />
     <Compile Include="Extensions\ExtNumbers.cs" />
+    <Compile Include="Extensions\ExtString.cs" />
     <Compile Include="Firewall.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

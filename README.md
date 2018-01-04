@@ -46,3 +46,8 @@ using Guiosoft.Extensions;
 ```c#
 DateTime.ToSQL()	// Returns string representation of value to use in SQL expression
 ```
+
+### String
+```c#
+public static string Replace(this string str, string[] searched, string[] replaced, StringComparison comparisonType = StringComparison.CurrentCulture, int limitByElements = 256)	// Replaces contents in string, searching by values in array
+```
