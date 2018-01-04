@@ -37,6 +37,10 @@ using Guiosoft.Extensions;
 ```c#
 (double, decimal).IsZero(int decimals = 2)	// Returns if a value is pratical zero 
 ```
+```c#
+(double, decimal).IsEqual(another, int decimals = 2)	// Returns if a value is pratical zero 
+```
+
 
 ### DateTime
 ```c#

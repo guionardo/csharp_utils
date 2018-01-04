@@ -26,7 +26,7 @@ namespace UnitTests
 
         [TestMethod]
         public void TestExtensions()
-        {            
+        {
             Console.WriteLine(Math.PI + " = " + Math.PI.ToSQL());
 
             double dou = 0.001;
@@ -40,7 +40,14 @@ namespace UnitTests
 
             DateTime dt = DateTime.Now;
             Console.WriteLine(dt + " = " + dt.ToSQL());
-            
+
+            double d2 = 0.01;
+            Console.WriteLine(dou + " = " + d2 + " => " + dou.IsEqual(d2));
+            Console.WriteLine(dou + " = " + d2 + " => " + dou.IsEqual(d2, 1));
+
+            decimal de2 = 0.0003M;
+            Console.WriteLine(dec + " = " + de2 + " => " + dec.IsEqual(de2));
+            Console.WriteLine(dec + " = " + de2 + " => " + dec.IsEqual(de2, 4));
         }
     }
 }
