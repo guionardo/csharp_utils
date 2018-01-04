@@ -21,6 +21,9 @@ namespace Guiosoft
     {
         private static FWInfo[] _FWList = null;
 
+        /// <summary>
+        /// List of firewall installed
+        /// </summary>
         public static FWInfo[] FWList
         {
             get
